@@ -1,0 +1,69 @@
+Git Command
+Git pull
+git init
+git add README.md --optional
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/prashanthyogaraj/Git_Learn.git
+git push -u origin main
+
+
+
+
+git branch test2 ---create new branch
+git pull --rebase ---pull latest code
+git checkout test2 # gets you "on branch test2
+git fetch origin        # gets you up to date with origin
+git merge origin/master
+
+
+
+
+pushing the local branch
+git push origin test1
+
+
+merging code fromm branch to master
+git merge origin/test1
+
+git rebase --abort
+
+
+python venve demo
+
+python -m venv "projectname"  --system-site-packages
+projectname\scripts\activate.bat
+pip freeze
+
+create requirements.txt(copy pip freeze output)
+
+deactivate
+rmdir projectname /s
+
+
+to use requirements command "pip install -r requirements.txt"
+
+pip list --local
+
+
+====================================pytest================================================
+
+Rn the code with verbosity
+C:\Python34\Scripts\py.test.exe -v tes_matlib.py
+
+
+Run specific set of test
+C:\Python34\Scripts\py.test.exe -v -k sum tes_matlib.py
+
+Run with marker
+
+@pytest.mark.name
+C:\Python34\Scripts\py.test.exe -v -m "marker_name" tes_matlib.py
+
+stop test after n failures
+
+pytest --maxfail = <num>
+
+
+output the reports in xml
+pytest --junitxml="result.xml"
